@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+    background: url(~src\assets\images\im1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin: 150px;    
+}
+.col-1 h2{
+    position: relative;
+    font-size: 30px;
+    color:goldenrod;
+    font-weight: 900;
+    margin: 20px 0 10px;
+    animation:typing 4s steps(25,end) forwards,
+   
+}
+@keyframes typing{
+    0%{width:0%}
+    100%{width:100%}
+}
+
+.col-1 p{
+    font-size: 18px;
+    color:#fff;
+    font: 500;
+    margin: 30px 0;
+    font-size: 20px;
+    line-height:50px;
+}
+button{
+    width: 140px;
+    background: goldenrod;
+    border-radius: 25px;
+    border:0;
+    padding:12px 10px;
+    outline:none;
+    color: #fff;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 75%;
+    background: goldenrod;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+@media screen and (max-width:700px){
+    .row{
+        flex-direction: column-reverse;
+        background-size: cover;
+        background-repeat:no-repeat;
+        height: 100vh;
+       
+    }
+    .col-1{
+    top:50%;
+    margin:0;
+    width: 60%;
+    flex-basis: 40%;
+    position: relative;
+    margin: 150px;
+    
+    }
+    .col-1 h2{
+        font-size: 20px;
+    }
+
+    .col-1 p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}

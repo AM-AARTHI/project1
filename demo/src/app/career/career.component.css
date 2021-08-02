@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.career{
+    position:relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(~src\assets\images\Car.jpg);
+    background-size: cover;
+}
+.career .content{
+   max-width:800px;
+   text-align: center;
+}
+.career .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.career .content h1{
+    font-weight: 900;
+    color: goldenrod;
+}
+.container{
+width:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+.container .positions{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .positions .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .positions .box .icon{
+    min-width: 30px;
+    height: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .positions .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .positions .box .text h3{
+    font-weight: 900;
+    font-size: 21px;
+    color: goldenrod;
+}
+.form{
+    width:40%;
+    padding:60px;
+    background:transparent;
+    border-radius: 25px;
+    align-items: center;
+}
+
+
+@media(max-width:991px)
+{
+    .career
+    {
+        padding:40px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .positions{
+        margin-bottom: 40px;
+    }
+    .container .positions, .form{
+        width:100%;
+
+    }
+}
+body{
+    display: flex;
+    align-items: center;
+}
+.file_upload{
+    width:300px;
+    height: 445px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.file_upload .header{
+    width:100%;
+    height: 145px;
+    background: #4db6ac;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+.file_upload .header p{
+    counter-reset: #fff;
+    margin-right: 10px;
+}
+.file_upload .header p span{
+    font-size: 3rem;
+    font-weight: 100;
+
+}
+.file_upload .header p span span{
+    font-weight: 600;
+}
+.file_upload .bod{
+    background: #fff;
+    width: 100%;
+    height: calc(100% - 145px);
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.file_upload .bod input[type="file"]{
+    display: none;
+}
+.file_upload .bod{
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.file_upload .bod p strong{
+    color: #4db6ac;
+}
+.file_upload .bod p span{
+    color: #4db6ac;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
